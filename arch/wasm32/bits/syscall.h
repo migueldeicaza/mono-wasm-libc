@@ -601,7 +601,7 @@
 #define SYS_io_getevents	247
 #define SYS_io_submit		248
 #define SYS_io_cancel		249
-#define SYS_fadvise64		250
+#define SYS_fadvise64_64	250
 /* 251 is available for reuse (was briefly sys_set_zone_reclaim) */
 #define SYS_exit_group		252
 #define SYS_lookup_dcookie	253
@@ -623,7 +623,7 @@
 #define SYS_fstatfs64		269
 #define SYS_tgkill		270
 #define SYS_utimes		271
-#define SYS_fadvise64_64	272
+#define SYS_fadvise64           272
 #define SYS_vserver		273
 #define SYS_mbind		274
 #define SYS_get_mempolicy	275
