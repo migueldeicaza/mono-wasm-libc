@@ -4,6 +4,11 @@
 
 #define a_barrier() syscall(__NR_membarrier)
 
-#define a_cas(p, t, s) (abort(), s)
+#define a_ll(p) *p
+#define a_sc(p, s) \
+    ({ \
+        *p = s; \
+        1; \
+    })
 
 #define a_crash() abort()
