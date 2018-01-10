@@ -787,6 +787,7 @@ extern "C" {
   maximum supported value of n differs across systems, but is in all
   cases less than the maximum representable value of a size_t.
 */
+__attribute__ ((__visibility__ ("default")))
 void* dlmalloc(size_t);
 
 /*
