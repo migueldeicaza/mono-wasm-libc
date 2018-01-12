@@ -797,6 +797,7 @@ void* dlmalloc(size_t);
   It has no effect if p is null. If p was not malloced or already
   freed, free(p) will by default cause the current program to abort.
 */
+__attribute__ ((__visibility__ ("default")))
 void  dlfree(void*);
 
 /*
